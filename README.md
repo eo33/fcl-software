@@ -1,4 +1,9 @@
-## Task overview:
+## FCL Assessment
+
+This repository contains the source code for the FCL assessment.
+Check out a video explanation of what I've done [here](https://www.loom.com/share/687b892a1c854ee3b5f934dc161af47a?sid=ec78b942-4978-4f14-b4cd-311f4a8e1e1c)
+
+## Requirements:
 
 ### Frontend:
 
