@@ -1,0 +1,28 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum MachineModel {
+  MODEL_1
+  MODEL_2
+  MODEL_3
+}
+
+model batch{
+  serialNumber String @id @default(uuid())
+  model MachineModel
+  deliveryDate DateTime
+  quantity Int
+  licenseLevel Int
+  comment String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
